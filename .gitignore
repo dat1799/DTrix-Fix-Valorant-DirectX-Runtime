@@ -1,1 +1,3 @@
-build/dist/
+*
+!README.md
+!.gitignore

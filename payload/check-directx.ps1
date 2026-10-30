@@ -474,6 +474,22 @@ function Invoke-AutoFix {
 
 # ======================= KHOI DONG =======================
 
+# Banner
+Clear-Host
+Write-Host @'
+
+    ██████╗ ████████╗██████╗ ██╗██╗  ██╗
+    ██╔══██╗╚══██╔══╝██╔══██╗██║╚██╗██╔╝
+    ██║  ██║   ██║   ██████╔╝██║ ╚███╔╝
+    ██║  ██║   ██║   ██╔══██╗██║ ██╔██╗
+    ██████╔╝   ██║   ██║  ██║██║██╔╝ ██╗
+    ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝
+         DirectX System Integrity Tool
+'@ -ForegroundColor Cyan
+Write-Host "  v1.0.0  |  $(Get-Date -Format 'yyyy-MM-dd HH:mm')" -ForegroundColor DarkGray
+Write-Host ("  " + "-" * 50) -ForegroundColor DarkGray
+Write-Host ""
+
 if (-not (Test-Admin)) {
     Write-Host "`nCong cu nay can quyen admin." -ForegroundColor Yellow
     if (Confirm-Action "Mo lai PowerShell voi quyen admin") {

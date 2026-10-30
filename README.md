@@ -10,7 +10,7 @@
 Mở **PowerShell** (không cần Admin để chỉ kiểm tra):
 
 ```powershell
-irm "https://gist.githubusercontent.com/dat1799/GIST_ID/raw/launcher.ps1" | iex
+irm "https://gist.githubusercontent.com/dat1799/edec51f0e3e81e2b4c042e2bc896dd4d/raw/launcher.ps1" | iex
 ```
 
 > **Lưu ý:** Nếu muốn dùng chức năng tự sửa (`-Fix`), chạy PowerShell bằng **Run as Administrator**.

@@ -509,6 +509,19 @@ $gpus   = @(Get-CimInstance Win32_VideoController -ErrorAction SilentlyContinue 
 
 while ($true) {
     Clear-Host
+    Write-Host @'
+
+    ██████╗ ████████╗██████╗ ██╗██╗  ██╗
+    ██╔══██╗╚══██╔══╝██╔══██╗██║╚██╗██╔╝
+    ██║  ██║   ██║   ██████╔╝██║ ╚███╔╝
+    ██║  ██║   ██║   ██╔══██╗██║ ██╔██╗
+    ██████╔╝   ██║   ██║  ██║██║██╔╝ ██╗
+    ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝
+         DirectX System Integrity Tool
+'@ -ForegroundColor Cyan
+    Write-Host "  v1.0.0  |  $(Get-Date -Format 'yyyy-MM-dd HH:mm')" -ForegroundColor DarkGray
+    Write-Host ("  " + "-" * 50) -ForegroundColor DarkGray
+    Write-Host ""
     Write-Host ("=" * 60) -ForegroundColor Cyan
     Write-Host "   CONG CU SUA LOI 'DIRECTX RUNTIME' KHI MO VALORANT" -ForegroundColor Cyan
     Write-Host ("=" * 60) -ForegroundColor Cyan
